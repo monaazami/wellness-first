@@ -34,6 +34,15 @@ a {
 	width: 50%;
 	border: 5px solid black;
 }
+.section-main {
+	background-color: rgba(0, 0, 0, 0.51);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.42);
+}
+.active {
+	color: rgba(225, 162, 25, 0.91);
+	font-weight: 700;
+	font-size: 1.01rem;
+}
 
 .section-head {
 	font-size: 2.5rem;
@@ -50,8 +59,9 @@ ul li {
 section#entertainment {
 	background: url(https://images.unsplash.com/photo-1472673630503-c6bfba62adbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80)
 		no-repeat center/cover;
-	padding: 2rem 0;
+	padding: 30rem 0;
 }
+
 section#contact {
 	background: url(https://images.unsplash.com/photo-1499159058454-75067059248a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80)
 		no-repeat top/cover;
@@ -68,6 +78,9 @@ section#contact {
 	grid-template-columns: repeat(2, 1fr);
 	text-align: right;
 }
+.slider {
+	border-top: 2rem solid black;
+}
 
 /* Showcase */
 #showcase {
@@ -80,14 +93,44 @@ section#contact {
 	position: relative;
 	overflow-y: hidden;
 }
+#showcase-event {
+	margin: 0;
+	padding: 0;
+	background: url('https://images.unsplash.com/photo-1518169709214-6d2fff4a8a4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')
+		no-repeat center/cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow-y: hidden;
+}
 .logo {
-	width: 10%;
-	height: 15%;
+	width: 12%;
+	height: 20%;
 	position: relative;
 	padding-top: 8rem;
 	margin: 1rem auto;
 	align-content: center;
 	display: flex;
+}
+.container-event {
+	max-width: 1180px;
+	text-align: center;
+	margin: 25rem auto;
+	padding: 2rem 3rem;
+	background-color: rgba(255, 255, 255, 0.43);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.42);
+}
+.container-event h1 {
+	font-size: 4rem;
+	color: #000000;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 600;
+}
+.container-event p {
+	font-size: 2rem;
+	color: #000000;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
 }
 .contact {
 	color: black;
@@ -224,7 +267,7 @@ nav a {
 	text-decoration: none;
 }
 nav li:hover {
-	background-color: #444;
+	font-size: 1.1rem;
 }
 nav a#openup {
 	display: none;
