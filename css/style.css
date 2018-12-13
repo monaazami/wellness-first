@@ -30,10 +30,7 @@ a {
 .section {
 	padding: 2rem 0;
 }
-.refugee {
-	width: 50%;
-	border: 5px solid black;
-}
+
 .section-main {
 	background-color: rgba(0, 0, 0, 0.51);
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.42);
@@ -59,13 +56,18 @@ ul li {
 section#entertainment {
 	background: url(https://images.unsplash.com/photo-1472673630503-c6bfba62adbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80)
 		no-repeat center/cover;
-	padding: 30rem 0;
+	padding: 40rem 0;
 }
 
 section#contact {
-	background: url(https://images.unsplash.com/photo-1499159058454-75067059248a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80)
-		no-repeat top/cover;
-	padding: 20rem 0;
+	margin: 0;
+	padding: 0;
+	background: url('https://images.unsplash.com/photo-1499159058454-75067059248a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80')
+		no-repeat center/cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow-y: hidden;
 }
 .icon {
 	color: #000000;
@@ -104,8 +106,8 @@ section#contact {
 	overflow-y: hidden;
 }
 .logo {
-	width: 12%;
-	height: 20%;
+	width: 18%;
+	height: auto;
 	position: relative;
 	padding-top: 8rem;
 	margin: 1rem auto;
@@ -277,14 +279,27 @@ nav a#openup {
 	.hide-on-small {
 		display: none;
 	}
+	section#entertainment {
+		padding: 15rem 0;
+	}
+	section#contact {
+		background: url('');
+		height: 30vh;
+	}
+	.icon {
+		color: white;
+	}
 
 	#showcase {
 		height: 50vh;
 	}
 	.logo {
-		width: 15%;
-		height: 15%;
 		padding-top: 4rem;
+		width: 16%;
+		height: auto;
+	}
+	.icon {
+		margin-bottom: 8rem;
 	}
 	.section-main {
 		margin-top: 0;
@@ -367,10 +382,6 @@ nav a#openup {
 @media screen and (max-width: 780px) {
 	.gift-cards {
 		grid-template-columns: 1fr;
-	}
-	.logo {
-		width: 15%;
-		height: 15%;
 	}
 
 	footer .footer-cols {
