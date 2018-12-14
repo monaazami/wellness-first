@@ -11,7 +11,7 @@
 
 body {
 	font-family: 'PT Sans', sans-serif;
-	background-color: #252529;
+	background-color: #6d6d6d;
 	margin: 0;
 	color: #fff;
 	line-height: 1.6;
@@ -23,7 +23,7 @@ img {
 
 a {
 	text-decoration: none;
-	color: #ccc;
+	color: #000000;
 }
 
 /* Section */
@@ -32,8 +32,7 @@ a {
 }
 
 .section-main {
-	background-color: rgba(0, 0, 0, 0.51);
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.42);
+	background-color: rgba(0, 0, 0, 0.43);
 }
 .active {
 	color: rgba(225, 162, 25, 0.91);
@@ -59,7 +58,7 @@ section#entertainment {
 	padding: 40rem 0;
 }
 
-section#contact {
+#showcase-contact {
 	margin: 0;
 	padding: 0;
 	background: url('https://images.unsplash.com/photo-1499159058454-75067059248a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80')
@@ -69,8 +68,19 @@ section#contact {
 	position: relative;
 	overflow-y: hidden;
 }
+
+/* section#contact {
+	margin: 0;
+	padding: 0;
+	background: url('https://images.unsplash.com/photo-1499159058454-75067059248a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80')
+		no-repeat center/cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow-y: hidden;
+} */
 .icon {
-	color: #000000;
+	color: #ffffff;
 	margin: 2rem;
 }
 
@@ -253,7 +263,7 @@ nav {
 }
 nav ul {
 	padding: 0;
-	margin: 0;
+	margin: 0 5rem;
 }
 nav li {
 	display: inline;
@@ -286,12 +296,19 @@ nav a#openup {
 		background: url('');
 		height: 30vh;
 	}
-	.icon {
-		color: white;
+	.container-event {
+		margin-top: 20rem;
+		padding-top: 0;
+	}
+	#showcase-contact{
+		top:o;
+
+		background-position: left;
+		height: 90vh;
 	}
 
 	#showcase {
-		height: 50vh;
+		height: 60vh;
 	}
 	.logo {
 		padding-top: 4rem;
@@ -299,11 +316,25 @@ nav a#openup {
 		height: auto;
 	}
 	.icon {
-		margin-bottom: 8rem;
+		padding-bottom: 5rem;
+		color: white;
 	}
 	.section-main {
 		margin-top: 0;
 		padding-top: 0;
+	}
+	.section-main.container h1 {
+		font-size: 24px;
+	}
+	.section-main.container h2 {
+		font-size: 18px;
+	}
+	.section-main.container {
+		max-width: 60%;
+		box-shadow: 5px 5px 5px rgba(92, 92, 92, 0.09);
+	}
+	.container-contact {
+		background: url('');
 	}
 
 	#showcase .container {
@@ -311,7 +342,7 @@ nav a#openup {
 	}
 
 	#showcase h1 {
-		font-size: 2.2rem;
+		font-size: 1.5rem;
 	}
 
 	#showcase h2 {
@@ -364,6 +395,24 @@ nav a#openup {
 		width: 100%;
 		position: relative;
 	}
+	/* .mona {
+		background: #000000;
+		color: white;
+		border-radius: 5%;
+		-webkit-appearance: none;
+		border: none;
+		text-transform: uppercase;
+		position: relative;
+		padding: 5px 20px;
+		font-size: 1em;
+		font-family: 'Lato', sans-serif;
+		font-weight: 100;
+		-webkit-transition: all 333ms ease-in-out;
+		-moz-transition: all 333ms ease-in-out;
+		-o-transition: all 333ms ease-in-out;
+		-ms-transition: all 333ms ease-in-out;
+		transition: all 333ms ease-in-out;
+	} */
 }
 .cf:before,
 .cf:after {
@@ -379,6 +428,7 @@ nav a#openup {
 	zoom: 1;
 }
 
+
 @media screen and (max-width: 780px) {
 	.gift-cards {
 		grid-template-columns: 1fr;
@@ -393,4 +443,142 @@ nav a#openup {
 	#showcase p.lead {
 		display: none;
 	}
+}
+
+body section .form {
+	background: white;
+	margin: 60px auto 120px;
+	border-top: 15px solid #313a3d;
+	text-align: center;
+	padding: 50px 0 110px;
+	width: 80%;
+	max-width: 1100px;
+}
+/* body section h1 {
+	margin-bottom: 40px;
+	font-size: 4em;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+  } */
+
+form {
+	width: 58.3333333333%;
+	margin: 0 auto;
+}
+form .field {
+	width: 100%;
+	position: relative;
+	margin-bottom: 15px;
+}
+form .field label {
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #636363;
+	width: 100%;
+	padding: 18px;
+	font-size: 1.1em;
+	letter-spacing: 0.075em;
+	-webkit-transition: all 333ms ease-in-out;
+	-moz-transition: all 333ms ease-in-out;
+	-o-transition: all 333ms ease-in-out;
+	-ms-transition: all 333ms ease-in-out;
+	transition: all 333ms ease-in-out;
+}
+form .field label + span {
+	font-family: 'SSStandard';
+	opacity: 0;
+	color: #4f0000;
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 7%;
+	font-size: 2em;
+	text-shadow: 1px 2px 0 #cd6302;
+	-webkit-transition: all 333ms ease-in-out;
+	-moz-transition: all 333ms ease-in-out;
+	-o-transition: all 333ms ease-in-out;
+	-ms-transition: all 333ms ease-in-out;
+	transition: all 333ms ease-in-out;
+}
+form .field input[type='text'],
+form .field textarea {
+	border: none;
+	background: #e8e9ea;
+	width: 80.5%;
+	margin: 0;
+	padding: 18px 0;
+	padding-left: 19.5%;
+	color: #313a3d;
+	font-size: 1.4em;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+form .field input[type='text']#msg,
+form .field textarea#msg {
+	height: 18px;
+	resize: none;
+	-webkit-transition: all 333ms ease-in-out;
+	-moz-transition: all 333ms ease-in-out;
+	-o-transition: all 333ms ease-in-out;
+	-ms-transition: all 333ms ease-in-out;
+	transition: all 333ms ease-in-out;
+}
+form .field input[type='text']:focus,
+form .field input[type='text'].focused,
+form .field textarea:focus,
+form .field textarea.focused {
+	outline: none;
+}
+form .field input[type='text']:focus#msg,
+form .field input[type='text'].focused#msg,
+form .field textarea:focus#msg,
+form .field textarea.focused#msg {
+	padding-bottom: 150px;
+}
+form .field input[type='text']:focus + label,
+form .field input[type='text'].focused + label,
+form .field textarea:focus + label,
+form .field textarea.focused + label {
+	width: 18%;
+	background: #fd9638;
+	color: #313a3d;
+}
+form .field input[type='text'].focused + label,
+form .field textarea.focused + label {
+	color: #fd9638;
+}
+form .field:hover label {
+	width: 18%;
+	background: #313a3d;
+	color: white;
+}
+form input[type='submit'] {
+	background: #fd9638;
+	color: white;
+	border-radius: 5%;
+	-webkit-appearance: none;
+	border: none;
+	text-transform: uppercase;
+	position: relative;
+	padding: 13px 50px;
+	font-size: 1.4em;
+	letter-spacing: 0.1em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	-webkit-transition: all 333ms ease-in-out;
+	-moz-transition: all 333ms ease-in-out;
+	-o-transition: all 333ms ease-in-out;
+	-ms-transition: all 333ms ease-in-out;
+	transition: all 333ms ease-in-out;
+}
+form input[type='submit']:hover {
+	background: #313a3d;
+	color: #fd9638;
+}
+form input[type='submit']:focus {
+	outline: none;
+	background: #cd6302;
 }

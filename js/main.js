@@ -1,4 +1,3 @@
-
 $(function() {
 	menu = $('nav ul');
 
@@ -9,14 +8,14 @@ $(function() {
 
 	$(window).resize(function() {
 		var w = $(this).width();
-		if (w > 580 && menu.is(':hidden')) {
+		if (w > 480 && menu.is(':hidden')) {
 			menu.removeAttr('style');
 		}
 	});
 
 	$('nav li').on('click', function(e) {
 		var w = $(window).width();
-		if (w < 580) {
+		if (w < 480) {
 			menu.slideToggle();
 		}
 	});
@@ -40,4 +39,50 @@ $('.cf a').on('click', function(event) {
 			}
 		);
 	}
+});
+
+
+
+
+// form
+$('textarea').blur(function () {
+    $('#hire textarea').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('textarea + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('textarea + label + span').css({'opacity': 0});
+        }
+    });
+});
+
+$('#hire .field:first-child input').blur(function () {
+    $('#hire .field:first-child input').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('.field:first-child input + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('.field:first-child input + label + span').css({'opacity': 0});
+        }
+    });
+});
+
+$('#hire .field:nth-child(2) input').blur(function () {
+    $('#hire .field:nth-child(2) input').each(function () {
+        $this = $(this);
+        if ( this.value != '' ) {
+          $this.addClass('focused');
+          $('.field:nth-child(2) input + label + span').css({'opacity': 1});
+        }
+        else {
+          $this.removeClass('focused');
+          $('.field:nth-child(2) input + label + span').css({'opacity': 0});
+        }
+    });
 });
